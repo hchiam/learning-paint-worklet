@@ -1,7 +1,6 @@
 class CustomWorklet {
-  // Whether Alpha is allowed - This is set to true by default, if it is set to false all colours used on the canvas will have full opacity, or alpha of 1.0
   static get contextOptions() {
-    return { alpha: true };
+    return { alpha: true }; // true by default, else false --> alpha of 1.0 for all colours used on canvas
   }
 
   paint(drawingContext) {
