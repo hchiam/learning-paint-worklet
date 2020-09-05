@@ -1,0 +1,23 @@
+{
+  "name": "learning-paint-worklet",
+  "version": "1.0.0",
+  "description": "Just one of the things I'm learning. <https://github.com/hchiam/learning>",
+  "main": "worklet.js",
+  "scripts": {
+    "start": "open http://localhost:8000; node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hchiam/learning-paint-worklet.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hchiam/learning-paint-worklet/issues"
+  },
+  "homepage": "https://github.com/hchiam/learning-paint-worklet#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

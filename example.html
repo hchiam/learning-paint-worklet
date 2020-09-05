@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Example paint worklet</title>
+  </head>
+  <body>
+    <div>
+      <p>Try using Chrome to see the following text have a custom underline:</p>
+      <div class="element-using-custom-paint-worklet">Hello world!</div>
+    </div>
+
+    <style>
+      .element-using-custom-paint-worklet {
+        background-image: paint(custom-paint-worklet);
+      }
+
+      body {
+        background: #222;
+        color: white;
+        padding: 1rem;
+        height: 50vh;
+        display: grid;
+        place-items: center;
+        font-size: 2rem;
+      }
+    </style>
+
+    <script>
+      CSS.paintWorklet.addModule("http://localhost:8000/worklet.js");
+    </script>
+  </body>
+</html>
